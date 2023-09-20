@@ -1,0 +1,79 @@
+/** Cette page de contact n'ayant pas besoin de aside, je lui ai donc mis une valeur nulle en px. 
+J'ai aussi choisi de mettre le formulaire dans un article afin qu'il profite de la mise en page propre à cette zone (prévue dans test.css)
+et donc le faire ressortir.
+Dans un second temps, j'ai mis un margin left/right/top/bottom dans article et un padding dans les différentes sections le composant pour 
+aérer la page et son contenu. **/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 140px auto 0px 115px;
+}
+
+/** Début de la zone main **/
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+article {
+    background-color: rgba(8, 4, 31, 1);
+    color: aliceblue;
+    font-size: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+section {
+    padding: 3%;
+}
+
+input,
+textarea {
+    border-radius: 7px;
+    background-color: aliceblue;
+    transition: background-color 0.4s;
+}
+
+input:focus:invalid {
+    background-color: rgb(162, 8, 8);
+    color: aliceblue;
+}
+
+textarea:focus:invalid {
+    background-color: rgb(162, 8, 8);
+    color: aliceblue;
+}
+
+/** Fin de la zone main **/
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px auto auto 115px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px auto auto 60px;
+    }
+
+}

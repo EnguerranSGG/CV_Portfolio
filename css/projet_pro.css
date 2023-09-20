@@ -1,0 +1,155 @@
+/** Grid principale **/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 155px auto auto 115px;
+}
+
+/** Début de la zone main **/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    text-align: justify;
+    padding: 4%;
+}
+
+article {
+    background-color: rgb(8, 4, 31);
+    color: rgba(240, 248, 255, 1);
+    text-align: justify;
+    border-radius: 15px;
+    padding: 3%;
+    margin: 1%;
+    box-shadow: 10px 10px 10px #0000;
+}
+
+.logo_declics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Fin de zone main **/
+
+/** Début de la zone aside **/
+
+aside {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.projet {
+    text-align: justify;
+}
+
+.exploration {
+    text-align: justify;
+}
+
+.decouvertes {
+    text-align: justify;
+    padding-bottom: 3%;
+    border-bottom: 2px solid rgba(240, 248, 255, 1);
+}
+
+.logos_decouvertes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.explo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-collapse: collapse;
+}
+
+.IA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-right: 1px solid rgba(240, 248, 255, 1);
+}
+
+.VR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: 1px solid rgba(240, 248, 255, 1);
+}
+
+/** Fin de la zone aside **/
+
+/** Zone responsive **/
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px auto auto 115px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px auto auto 60px;
+    }
+
+    .intro {
+        font-size: 7px;
+    }
+
+    article {
+        font-size: 8px;
+    }
+
+    .projet {
+        font-size: 7px;
+    }
+
+    .exploration {
+        font-size: 7px;
+    }
+
+    .logo_d {
+        width: 45%;
+        height: 45%;
+    }
+
+    .decouvertes {
+        font-size: 7px;
+    }
+
+    .IA {
+        font-size: 7px;
+    }
+
+    .VR {
+        font-size: 7px;
+    }
+
+}

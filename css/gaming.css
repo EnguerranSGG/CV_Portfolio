@@ -1,0 +1,182 @@
+/** Répartition globale de la page : ici il est important de considérer que j'ai voulu faire les choses diffèremment puisque je savais
+que c'était la dernière page que j'avais à faire pour l'oral à venir. A ce moment précis, j'étais consterné par le manque de responsivité
+de mon site. Après un temps de réflexion, je me suis dit que peut-être ce manque responsivité observé sur mes autres pages pouvait être 
+résolu en modulant toutes les pages dans leur entierté à l'aide de "CSS Grid" : ma bête noire. 
+
+Je commenca donc par créer une grid principale "body" dans laquelle j'allais imbriquer deux autres grid pour gérer "main" et "aside". 
+Avant de mettre du véritable contenu sur la page, je me suis entrainé à bien répartir les zones en leur attribuant des valeurs en px 
+et en les colorants.
+
+Cette page cobaye est donc devenue la dernière page de mon site "1.0" mais la première de mon site "2.0" si je puis dire. En effet, mon 
+acharnement aupres de CSS Grid ayant porté ces fruits, j'ai décidé par la suite de revoir l'entierté de mon site sous ce nouvel angle. **/
+
+/** Grid principale **/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 155px auto 650px 115px;
+    gap: 0%;
+}
+
+/** Zone main **/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px auto;
+}
+
+.intro {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogoSUN {
+    padding-top: 3%;
+}
+
+.photo-perso {
+    background-image: url("../images/Gaming/Photo_perso.jpg");
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.descri-perso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+
+.stats {
+    color: aliceblue;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-collapse: collapse;
+    padding: 1%;
+    margin: 0.1%;
+}
+
+td,
+th,
+caption {
+    border: 1px solid aliceblue;
+    padding-left: 1%;
+}
+
+.titre {
+    background-color: black;
+}
+
+.nom {
+    background-color: rgb(8, 4, 31);
+}
+
+.nombre {
+    background-color: black;
+}
+
+/** Fin de zone main **/
+
+/** Zone aside **/
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-image: url("../images/Gaming/EldenTree.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.aventure {
+    font-size: 1.1em;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 10px;
+}
+
+.mythologics {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** Fin zone aside **/
+
+/** Zone responsive **/
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px auto 650px 115px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px auto auto 60px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto;
+    }
+
+    .LogoSUN {
+        width: 60px;
+        height: 60px;
+    }
+
+    .descri-perso {
+        font-size: 7px;
+    }
+
+    .stats {
+        font-size: 8px;
+    }
+
+    .mythologics {
+        font-size: 7px;
+    }
+
+}

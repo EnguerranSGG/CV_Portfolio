@@ -1,0 +1,237 @@
+/** Pour donner un véritable point de départ à mon site web, j'ai préféré utiliser un fichier qui servirait de base statique pour chacune
+des pages web que je créerai. Dans celui-ci on retrouvera la "charte graphique" du site (couleurs, style, taille des titres et des 
+paragraphes...) mais aussi les header et footer puisqu'ils sont "immuables". 
+
+De plus, même si les pages sont de tailles differentes (uniquement en rows), je peux aussi inscrire les positions de chaque zone 
+dans les grid puisu'il me suffit d'inscrire des valeurs nulles en px dans les rangées inutiles pour certaines pages. Le tout est de placer
+le footer en fonction de la plus grande page de mon site. En parellèle, pour les colonnes, je choisis de parler en "fr" pour plus 
+de responsivité. **/
+
+/** Zone header et navigation **/
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-image: url("../images/Gaming/MoonRanni.jpg");
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.navigation {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    color: rgba(240, 248, 255, 1);
+    font-size: 30px;
+    text-decoration: none;
+    padding-right: 2%;
+    padding-bottom: 0.5%;
+}
+
+/** Pour stylyser le logo de mon site, j'ai eu recours a Fancy Border Radius**/
+
+.logo-header {
+    font-family: 'Crimson Text', 'Times New Roman', serif;
+    border: 3px double rgba(240, 248, 255, 1);
+    border-radius: 28% 72% 71% 29%;
+    font-size: 110px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 1);
+    margin-top: 0.5%;
+    margin-bottom: 0.2%;
+    margin-left: 1%;
+}
+
+.logo-header:active {
+    margin: 1%;
+}
+
+.logo-header:hover,
+.navigation:hover {
+    opacity: 0.7;
+}
+
+.test {
+    cursor: pointer;
+}
+
+.contenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(8, 4, 31, 0.5);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenu a {
+    color: rgba(240, 248, 255, 1);
+    display: inline-block;
+    text-decoration-color: rgba(240, 248, 255, 0);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px 16px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown:hover .contenu {
+    display: block;
+    width: 100%;
+}
+
+.contenu a:hover {
+    background-color: rgba(8, 4, 31, 0.8);
+}
+
+/** Fin de la zone header et navigation **/
+
+/** Zone de style **/
+
+h1 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 1000;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+main {
+    background-color: rgba(240, 248, 255, 1);
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+aside {
+    background-color: rgb(8, 4, 31);
+    color: rgba(240, 248, 255, 1);
+    background-size: cover;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.ancre {
+    text-decoration: none;
+}
+
+.ancre:hover {
+    text-decoration: underline;
+}
+
+/** Zone footer **/
+
+/** Ci-dessous ce trouve une expérimetation de footer dans laquelle j'essayais de donner l'impression que la lune de la barre de header 
+se reflètait dans la barre de footer. Pas satisfait.
+background: rgb(240,248,255);
+background: radial-gradient(circle, rgba(240,248,255,1) 0%, rgba(225,242,251,1) 0%, rgba(29,24,64,1) 45%, rgba(19,15,41,1) 88%, rgba(14,11,29,1) 100%, rgba(0,0,0,1) 100%); **/
+
+footer {
+    background: linear-gradient(rgb(8, 4, 31), #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    flex-wrap: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.footer {
+    margin: 0.5%;
+    padding-left: 0.5%;
+}
+
+.contacts {
+    display: flex;
+    padding-top: 1%;
+    padding-right: 4%;
+    gap: 5%;
+}
+
+.contactext {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 1);
+}
+
+.contactext:hover {
+    text-decoration: underline;
+}
+
+/** Fin de la zone footer et fin de la page **/
+
+@media screen and (max-width: 1200px) {
+
+    .logo-header {
+        font-size: 90px;
+    }
+
+    .navigation {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .logo-header {
+        font-size: 50px;
+        border: 1px double rgba(240, 248, 255, 1);
+    }
+
+    .navigation {
+        font-size: 8px;
+    }
+
+    .contenu {
+        font-size: 8px;
+    }
+
+    .contactext {
+        font-size: 6px;
+    }
+
+}

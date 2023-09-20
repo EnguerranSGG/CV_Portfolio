@@ -1,0 +1,152 @@
+/** Grid principale **/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 155px auto auto 115px;
+}
+
+/** Début de la zone main **/
+
+main {
+    display: grid;
+    grid-template-rows: 275px 275px;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../images/Parcourt_univ/Campus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titre {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+
+.intro {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+    color: rgba(240, 248, 255, 1);
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 2%;
+}
+
+.intro a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+/** Fin de zone main **/
+
+/** Début de la zone aside **/
+
+aside {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+    border-collapse: collapse;
+}
+
+.IA {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgba(240, 248, 255, 1);
+}
+
+.cyber {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-top: 1px solid rgba(240, 248, 255, 1);
+}
+
+.IA_texte,
+.cyber_texte {
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/** Fin de la zone aside **/
+
+/** Zone responsive **/
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px auto auto 115px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px auto auto 60px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 130px 130px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro {
+        font-size: 7px;
+    }
+
+    .IA_texte,
+    .cyber_texte {
+        font-size: 7px;
+    }
+
+    .illustration1 {
+        width: 170%;
+        height: 170%;
+    }
+
+    .illustration2 {
+        width: 220%;
+        height: 220%;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Espace contact </title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="./index.html" class="logo-header">
+        Es
+      </a>
+      <a href="./projet_pro.html" class="navigation">
+        PROJET PRO </a>
+      <a href="./parcours_univ.html" class="navigation">
+        PARCOURT UNIVERSITAIRE </a>
+      <div class="dropdown">
+        <button class="test"></button><a href="" class="navigation">
+          CENTRES D'INTERÊT </a></button>
+        <div class="contenu">
+          <a href="./dessin.html"> Dessinateur </a>
+          <a href="./gaming.html"> Gamer </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1><strong> Contactez-moi !</strong></h1>
+      <form action="/other_wild.html" method="post">
+        <section class="presentation">
+          <label for="who"> Qui est-ce? </label> <br>
+          <input type="email" name="mail" placeholder="Adresse mail" required>
+        </section>
+        <section class="why">
+          <label for="sujet"> A quel sujet me contactez-vous? </label> <br>
+          <input type="text" name="sujet" list="sujets" id="sujet" required>
+          <datalist id="sujets" name="sujet">
+            <option value="Dessin"></option>
+            <option value="Jeux-video"></option>
+            <option value="Ecriture"></option>
+            <option value="Ambauche"></option>
+            <option value="Oui, je suis célibataire?"></option>
+          </datalist>
+        </section>
+        <section class="what">
+          <label for="texte"> Je vous "écoute" ?</label>
+          <textarea id="texte" placeholder="Ecrivez-votre texte ici, entre 10 et 800 caractères" name="texte" rows="8"
+            cols="50" maxlength="800" minlength="10" required></textarea>
+        </section>
+        <section class="note">
+          <label for="combien"> Sur 10, quelle note doneriez-vous à mon site? </label> <br>
+          <input type="number" name="combien" id="combien" step="0" min="0" max="10" required>
+        </section>
+        <section class="send">
+          <input type="submit" value="Envoyer">
+        </section>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <div class="contacts">
+      <a target="_blank" href="" class="contactext">
+        Facebook
+      </a>
+      <a target="_blank" href="" class="contactext">
+        Linkedin
+      </a>
+      <a target="_blank" href="enguerran.smagghe@hotmail.fr" class="contactext">
+        Mail
+      </a>
+      <a href="./contact.html" class="contactext">
+        Contact
+      </a>
+    </div>
+  </footer>
+  
+  </body>
+  
+  </html>

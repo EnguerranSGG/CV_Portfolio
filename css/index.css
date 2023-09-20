@@ -1,0 +1,290 @@
+/** Grid principale **/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 155px auto auto 115px;
+}
+
+/** Début de la zone main **/
+
+main {
+    display: grid;
+    grid-template-rows: auto 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.presentation {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 4px solid rgb(8, 4, 31);
+    border-bottom: 4px solid rgb(8, 4, 31);
+    margin-left: 5%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-top: 4%;
+    border-radius: 20px 0px 20px 10px;
+}
+
+.sous_titre {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.resume {
+    text-align: justify;
+    padding: 2%;
+}
+
+.CV {
+    color: rgb(8, 4, 31);
+    text-decoration: none;
+}
+
+.CV:hover {
+    text-decoration: underline;
+}
+
+.Moi {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    filter: brightness(95%);
+    margin-top: 4%;
+}
+
+.btn_contact {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_contact {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.bouton_contact {
+    display: inline-block;
+    font-size: 2em;
+    background-color: rgba(8, 4, 31, 1);
+    border: 2px solid rgb(8, 4, 31);
+    color: rgba(240, 248, 255, 1);
+    text-decoration: none;
+    transition: transform 0.45s, background-color 0.3s 0.15s, color 0.3s 0.15s, box-shadow 0.45s linear;
+    border-radius: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+.bouton_contact:hover {
+    transform: scale(1.15);
+    background-color: rgba(240, 248, 255, 1);
+    color: rgb(8, 4, 31);
+    box-shadow: 2px 2px 10px black;
+}
+
+.bouton_contact:active {
+    box-shadow: none;
+    padding-top: 1%;
+}
+
+/** Fin de zone main **/
+
+/** Début de la zone aside **/
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.liens_images {
+    padding-bottom: 1%;
+    font-size: 2em;
+    color: aliceblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.decouvrir {
+    position: relative;
+    bottom: 52%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 248, 255, 0);
+    color: transparent;
+    transition: text-decoration-color 0.3s, color 0.3s;
+}
+
+.decouvrir2 {
+    position: relative;
+    bottom: 48%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 248, 255, 0);
+    color: transparent;
+    transition: text-decoration-color 0.3s, color 0.3s;
+    margin-bottom: 3%;
+}
+
+.decouvrir:hover,
+.decouvrir2:hover {
+    text-decoration-color: rgba(240, 248, 255, 1);
+    color: rgba(240, 248, 255, 1);
+}
+
+.photos_acceuil_dessin {
+    filter: brightness(80%);
+    width: 598px;
+    height: 364px;
+}
+
+.photos_acceuil_dessin:hover+.decouvrir {
+    color: rgba(240, 248, 255, 1);
+}
+
+.photos_acceuil_gaming {
+    filter: brightness(80%);
+    width: 598px;
+    height: 364px;
+}
+
+.photos_acceuil_gaming:hover+.decouvrir2 {
+    color: rgba(240, 248, 255, 1);
+}
+
+.photos_acceuil_dessin:hover,
+.photos_acceuil_gaming:hover {
+    filter: brightness(100%);
+}
+
+.gaming {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dessin {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/** Fin de la zone aside **/
+
+/** Zone responsive **/
+
+@media screen and (max-width: 1200px) {
+
+    .photos_acceuil_dessin,
+    .photos_acceuil_gaming {
+        width: 460px;
+        height: 280px;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px auto auto 115px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px auto auto 60px;
+    }
+
+    .resume {
+        font-size: 7px;
+    }
+
+    .presentation {
+        border-left: 1px solid rgb(8, 4, 31);
+        border-bottom: 1px solid rgb(8, 4, 31);
+    }
+
+    .bouton_contact {
+        font-size: 9px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .photo_moi {
+        width: 120%;
+        height: 120%;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .photos_acceuil_dessin,
+    .photos_acceuil_gaming {
+        width: 90%;
+        height: 90%;
+    }
+
+    .decouvrir {
+        position: relative;
+        bottom: 55%;
+        font-size: 0.8em;
+    }
+
+    .decouvrir2 {
+        position: relative;
+        bottom: 55%;
+        font-size: 0.8em;
+    }
+}

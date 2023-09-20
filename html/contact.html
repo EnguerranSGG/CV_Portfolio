@@ -28,7 +28,7 @@
         PARCOURT UNIVERSITAIRE </a>
       <div class="dropdown">
         <button class="test"></button><a href="" class="navigation">
-          CENTRES D'INTERÊT </a></button>
+          CENTRES D'INTERÊT </a>
         <div class="contenu">
           <a href="./dessin.html"> Dessinateur </a>
           <a href="./gaming.html"> Gamer </a>
@@ -42,13 +42,13 @@
       <h1><strong> Contactez-moi !</strong></h1>
       <form action="/other_wild.html" method="post">
         <section class="presentation">
-          <label for="who"> Qui est-ce? </label> <br>
+          <label for="qui"> Qui est-ce? </label> <br>
           <input type="email" name="mail" placeholder="Adresse mail" required>
         </section>
         <section class="why">
           <label for="sujet"> A quel sujet me contactez-vous? </label> <br>
           <input type="text" name="sujet" list="sujets" id="sujet" required>
-          <datalist id="sujets" name="sujet">
+          <datalist id="sujets">
             <option value="Dessin"></option>
             <option value="Jeux-video"></option>
             <option value="Ecriture"></option>
@@ -63,7 +63,7 @@
         </section>
         <section class="note">
           <label for="combien"> Sur 10, quelle note doneriez-vous à mon site? </label> <br>
-          <input type="number" name="combien" id="combien" step="0" min="0" max="10" required>
+          <input type="number" name="combien" id="combien" step="0" min="1" max="10" required>
         </section>
         <section class="send">
           <input type="submit" value="Envoyer">

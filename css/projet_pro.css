@@ -116,40 +116,46 @@ aside {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px auto auto 60px;
+        grid-template-rows: 55px auto auto 40px;
     }
 
-    .intro {
-        font-size: 7px;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo_d {
+        width: 50%;
+        height: 50%;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto auto 70px;
+    }
+
+    p {
+        font-size: 1.4vw;
     }
 
     article {
-        font-size: 8px;
-    }
-
-    .projet {
-        font-size: 7px;
-    }
-
-    .exploration {
-        font-size: 7px;
+        font-size: 1.2vw;
     }
 
     .logo_d {
         width: 45%;
         height: 45%;
-    }
-
-    .decouvertes {
-        font-size: 7px;
-    }
-
-    .IA {
-        font-size: 7px;
-    }
-
-    .VR {
-        font-size: 7px;
     }
 
 }

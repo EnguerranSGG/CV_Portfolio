@@ -122,7 +122,7 @@ aside {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px auto auto 60px;
+        grid-template-rows: 55px auto auto 40px;
     }
 
     main {
@@ -131,22 +131,33 @@ aside {
         grid-template-columns: 1fr 1fr;
     }
 
-    .intro {
-        font-size: 7px;
-    }
-
-    .IA_texte,
-    .cyber_texte {
-        font-size: 7px;
+    p {
+        font-size: 2vw;
     }
 
     .illustration1 {
-        width: 170%;
-        height: 170%;
+        width: 180%;
+        height: 180%;
     }
 
     .illustration2 {
-        width: 220%;
-        height: 220%;
+        width: 230%;
+        height: 230%;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto auto 70px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

@@ -73,7 +73,16 @@ textarea:focus:invalid {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px auto auto 60px;
+        grid-template-rows: 55px auto auto 40px;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto auto 70px;
+    }
 }

@@ -206,7 +206,7 @@ footer {
 @media screen and (max-width: 1200px) {
 
     .logo-header {
-        font-size: 90px;
+        font-size: 12vw;
     }
 
     .navigation {
@@ -217,8 +217,16 @@ footer {
 
 @media screen and (max-width: 900px) {
 
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
     .logo-header {
-        font-size: 50px;
+        font-size: 11vw;
         border: 1px double rgba(240, 248, 255, 1);
     }
 
@@ -232,6 +240,27 @@ footer {
 
     .contactext {
         font-size: 6px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .logo-header {
+        font-size: 8vw;
+        border: 1px double rgba(240, 248, 255, 1);
+    }
+
+    .navigation {
+        font-size: 1.7vw;
+    }
+
+    .contenu {
+        font-size: 1.5vw;
+    }
+
+    .contactext {
+        font-size: 1.5vw;
     }
 
 }

@@ -263,7 +263,7 @@ aside {
     opacity: 0.7;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
 
     body {
         display: grid;
@@ -276,7 +276,7 @@ aside {
     }
 
     .intro {
-        font-size: 0.8rem;
+        font-size: 90rem;
     }
 
     .visage {
@@ -326,66 +326,184 @@ aside {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px auto auto 60px;
+        grid-template-rows: 55px auto auto 40px;
     }
 
-    img {
-        max-width: 100%;
+    .dessin_pito,
+    .dessin_manga_oreilles,
+    .dessin_manga_yeux {
+        max-width: 70%;
     }
 
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto 180px auto;
-        padding-left: 1%;
-        padding-right: 1%;
-        padding-bottom: 1%;
-        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pito,
+    .yeux,
+    .oreilles {
+        display: inline-block;
+        text-align: center;
     }
 
     .intro {
-        font-size: 5px;
+        font-size: 3vw;
     }
 
     .visage {
-        font-size: 6px;
+        font-size: 3vw;
+    }
+
+    .proportions {
+        display: grid;
+        grid-template-rows: 230px 160px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .test1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .test2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
 
     .manga_proportions {
-        font-size: 9px;
-    }
-
-    .angle {
-        font-size: 6px;
-    }
-
-    .expression {
-        font-size: 6px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: justify;
+        font-size: 3.5vw;
     }
 
     .X,
     .O {
-        font-size: 80px;
+        font-size: 50vw;
     }
 
     .O {
         color: green;
         opacity: 0.5;
         position: relative;
-        left: 22%;
-        bottom: 25%;
+        left: 14%;
+        bottom: 95%;
     }
 
     .X {
         color: red;
         opacity: 0.5;
         position: relative;
-        left: 22%;
-        bottom: 25%;
+        left: 14%;
+        bottom: 95%;
+    }
+
+    .question_angle {
+        display: grid;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .manga1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .angle {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        font-size: 3vw;
+    }
+
+    .manga2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .expression {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        font-size: 3vw;
     }
 
     .plus_loin,
     .apprentissage {
-        font-size: 8px;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto auto 70px;
+    }
+
+    .dessin_pito,
+    .dessin_manga_oreilles,
+    .dessin_manga_yeux {
+        max-width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1%;
+    }
+
+    .proportions {
+        display: grid;
+        grid-template-rows: 370px 370px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .X,
+    .O {
+        font-size: 50vw;
+    }
+
+    .O {
+        color: green;
+        opacity: 0.5;
+        position: relative;
+        left: 13%;
+        bottom: 100%;
+    }
+
+    .X {
+        color: red;
+        opacity: 0.5;
+        position: relative;
+        left: 13%;
+        bottom: 100%;
+    }
+
+    .dessin_grand_manga {
+        padding-left: 10%;
+    }
+
+    .dessin_pito_ratee {
+        padding-left: 9%;
     }
 }

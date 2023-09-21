@@ -6,6 +6,10 @@ body {
     grid-template-rows: 155px auto auto 115px;
 }
 
+img {
+    max-width: 100%;
+}
+
 /** Début de la zone main **/
 
 main {
@@ -114,17 +118,6 @@ aside {
 
 /** Zone responsive **/
 
-@media screen and (max-width: 1200px) {
-
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 130px auto auto 115px;
-    }
-
-}
-
-
 @media screen and (max-width: 900px) {
 
     body {
@@ -140,7 +133,7 @@ aside {
     }
 
     p {
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
 
     .illustration1 {
@@ -164,8 +157,12 @@ aside {
 
     main {
         display: grid;
-        grid-template-rows: 250px 250px;
+        grid-template-rows: auto 300px;
         grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+        font-size: 1.8vw;
     }
 
 }

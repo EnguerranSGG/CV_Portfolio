@@ -149,14 +149,6 @@ aside {
     grid-column-end: 4;
 }
 
-.ancre {
-    text-decoration: none;
-}
-
-.ancre:hover {
-    text-decoration: underline;
-}
-
 /** Zone footer **/
 
 /** Ci-dessous ce trouve une expérimetation de footer dans laquelle j'essayais de donner l'impression que la lune de la barre de header 

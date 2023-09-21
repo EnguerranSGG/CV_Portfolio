@@ -134,6 +134,16 @@ aside {
     padding-right: 20px;
 }
 
+.lien_video {
+    display: inline-block;
+    text-decoration: none;
+    color:  rgb(100, 6, 100);
+}
+
+.lien_video:hover {
+    text-decoration: underline;
+}
+
 /** Fin zone aside **/
 
 /** Zone responsive **/

@@ -30,6 +30,15 @@ article {
     box-shadow: 10px 10px 10px #0000;
 }
 
+article a {
+    text-decoration: none;
+    color: rgb(100, 6, 100);
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
 .logo_declics {
     display: flex;
     flex-direction: row;

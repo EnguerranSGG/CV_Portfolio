@@ -48,7 +48,6 @@ main {
 }
 
 .intro a {
-    display: inline-block;
     text-decoration: none;
 }
 
@@ -93,6 +92,15 @@ aside {
     padding-top: 3%;
     padding-bottom: 3%;
     border-top: 1px solid rgba(240, 248, 255, 1);
+}
+
+.controverses {
+    color: rgb(100, 6, 100);
+    text-decoration: none;
+}
+
+.controverses:hover {
+    text-decoration: underline;
 }
 
 .IA_texte,

@@ -228,6 +228,13 @@ aside {
         grid-template-rows: 130px auto auto 115px;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -270,10 +277,15 @@ aside {
         grid-template-rows: auto auto;
     }
 
-    .photos_acceuil_dessin,
-    .photos_acceuil_gaming {
+    .photos_acceuil_dessin {
         width: 90%;
-        height: 90%;
+        height: 90%;  
+    }
+
+
+    .photos_acceuil_gaming {
+        width: 94%;
+        height: 94%;
     }
 
     .decouvrir {
@@ -306,4 +318,17 @@ aside {
         height: 100%;
         padding-right: 1%;
     }
+    .photos_acceuil_dessin {
+        width: 90%;
+        height: 90%;  
+    }
+
+
+    .photos_acceuil_gaming {
+        width: 94%;
+        height: 94%;
+    }
 }
+
+
+

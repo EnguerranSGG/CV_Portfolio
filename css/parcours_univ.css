@@ -16,7 +16,7 @@ main {
     display: grid;
     grid-template-rows: 275px 275px;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../images/Parcourt_univ/Campus.jpg);
+    background-image: url(../images/Parcourt_univ/Campus.avif);
     background-size: cover;
     background-repeat: no-repeat;
 }

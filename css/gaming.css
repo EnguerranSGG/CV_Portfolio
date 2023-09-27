@@ -42,7 +42,7 @@ main {
 }
 
 .photo-perso {
-    background-image: url("../images/Gaming/Photo_perso.jpg");
+    background-image: url("../images/Gaming/Photo_perso.avif");
     background-size: cover;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -101,7 +101,7 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    background-image: url("../images/Gaming/EldenTree.jpg");
+    background-image: url("../images/Gaming/EldenTree.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

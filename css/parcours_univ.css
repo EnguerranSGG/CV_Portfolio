@@ -165,4 +165,14 @@ aside {
         font-size: 1.8vw;
     }
 
+    .illustration1 {
+        width: 180%;
+        height: 180%;
+    }
+
+    .illustration2 {
+        width: 230%;
+        height: 230%;
+    }
+
 }
